@@ -13,48 +13,14 @@ namespace relearning_again
     {
       static void Main()
         {
-            string[] text = File.ReadAllLines("questions.txt");
-            int sleepTime = 3000;
-            Thread.Sleep(sleepTime);
+            int num1;
+            int num2;
+            string answer;
 
-            for(int i = 0; i < text.Length; i++)
-            {
-                Console.WriteLine(text[i]);
-            }
+            Console.WriteLine("welcome to the calculator programme");
+            Console.WriteLine("Please enter your first number");
 
-            List<string> options = new List<string>();
-            options.Add("Cat");
-            options.Add("Lion");
-            options.Add("Tiger");
-
-            Console.WriteLine("what is the name of the largest cat?");
-            int number = 1;
-            for(int i = 0; i < options.Count; i++)
-            {
-                options[i] = $"{number}. {options[i]}";
-
-                number++;
-            }
-
-
-            foreach(string option in options) {
-                Console.WriteLine(option);
-            }
-            string userInput = Console.ReadLine();
-
-            try
-            {
-                int userValue = int.Parse(userInput);
-
-                Console.WriteLine("you have entered: " + userValue);
-            }
-            catch (FormatException)
-            {
-                Console.WriteLine("Invalid input. Please enter a valid integer.");
-            }
-
-
-
+           int num1 =  Convert.ToInt32(Console.ReadLine());
 
             Console.ReadKey();
         }
