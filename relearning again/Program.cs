@@ -20,7 +20,14 @@ namespace relearning_again
             Console.WriteLine("welcome to the calculator programme");
             Console.WriteLine("Please enter your first number");
 
-           int num1 =  Convert.ToInt32(Console.ReadLine());
+           num1 =  Convert.ToInt32(Console.ReadLine());
+
+            Console.WriteLine("Enter your second number");
+            num2 = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine(".......");
+            Thread.Sleep(3000);
+
+
 
             Console.ReadKey();
         }
